@@ -1,0 +1,3 @@
+interface Helper {
+    extendPrototypes(): void;
+}

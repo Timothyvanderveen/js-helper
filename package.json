@@ -1,0 +1,23 @@
+{
+  "name": "js-helpers",
+  "version": "1.0.0",
+  "description": "JS Helpers",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timothyvanderveen/js-helper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timothyvanderveen/js-helper/issues"
+  },
+  "homepage": "https://github.com/Timothyvanderveen/js-helper#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "@types/webpack-env": "^1.16.4"
+  }
+}
