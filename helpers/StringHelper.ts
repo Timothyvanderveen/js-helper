@@ -1,4 +1,6 @@
-export class StringHelper implements Helper {
+import {Helper} from "./Helper";
+
+export class StringHelper extends Helper {
     extendPrototypes() {
         String.prototype.forEachChar = function (callback) {
             [...String(this)].forEach(callback);
@@ -8,7 +10,9 @@ export class StringHelper implements Helper {
             if (this.length > 1) return false;
             return ["a", "e", "o", "u"].indexOf(this.toLowerCase()) !== -1;
         };
+    }
 
+    extendConstructors() {
         String.randomChar = function () {
             const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

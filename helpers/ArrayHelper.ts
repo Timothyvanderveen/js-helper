@@ -1,4 +1,6 @@
-export class ArrayHelper implements Helper {
+import {Helper} from "./Helper";
+
+export class ArrayHelper extends Helper {
     extendPrototypes() {
         Array.prototype.shuffle = function () {
             let i = this.length
@@ -32,7 +34,9 @@ export class ArrayHelper implements Helper {
 
             return true;
         };
+    }
 
+    extendConstructors() {
         Array.range = (size, startAt = 0) => {
             return [...Array(size).keys()].map((i) => i + startAt);
         };
